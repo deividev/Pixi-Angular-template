@@ -102,7 +102,9 @@ export class SurviveHalloweenGame extends PixiGame {
     super.setGameScreen();
     this.resetGame();
 
+
     this.gameBg = new TilingSprite(this.loader.resources['bg-layer-1'].texture, 1280, 1280);
+
     const bg = Sprite.from(this.loader.resources['bg'].texture);
     this.gameScreen.addChild(this.gameBg);
     this.gameScreen.addChild(bg);
